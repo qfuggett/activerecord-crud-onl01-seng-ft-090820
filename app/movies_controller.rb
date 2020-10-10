@@ -31,6 +31,7 @@ def can_be_created_in_a_block(args = {})
   Movie.create do |m|
     m = Movie.new(title, release_date)
     m.save
+    m
   end
 end
 
